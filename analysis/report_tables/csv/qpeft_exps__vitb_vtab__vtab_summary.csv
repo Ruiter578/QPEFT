@@ -1,0 +1,4 @@
+Workbook,Sheet,Method,W/A,Params,Natural Avg,Specialized Avg,Structured Avg,Group Avg,Tot. Avg,Comments,Anomaly Notes
+qpeft_exps.xlsx,vitb_vtab,"LoRA(r=2),qkv_fc1",32/32,165888,81.3414,86.1400,60.3025,75.9280,73.4932,,
+qpeft_exps.xlsx,vitb_vtab,"LoRA(r=2),qkv_fc1,with-grad-scale",4/4,165888+83484,75.7771,85.3650,60.1388,73.7603,71.2111,"init shift=0.17, per-tensor",
+qpeft_exps.xlsx,vitb_vtab,"LoRA(r=2),qkv_fc1,with-grad-scale",3/3,165888+83484,74.1771,84.5875,58.9237,72.5628,69.9463,"init shift=0.17, per-tensor",

@@ -1,0 +1,11 @@
+wall_time,step,epoch,value,tag,event_file
+1768387616.5254884,10,10,4.6064534187316895,Val/epoch_loss,outputs_dev/vitb16/T=vtab_Q=3bit_L=lora_2_qkv-fc1-proj-fc2/cifar/20260114184203_default_acc=53.50/tensorboard/events.out.tfevents.1768387332.master-192-168-8-48.1680.0
+1768387791.3242002,20,20,2.6520791053771973,Val/epoch_loss,outputs_dev/vitb16/T=vtab_Q=3bit_L=lora_2_qkv-fc1-proj-fc2/cifar/20260114184203_default_acc=53.50/tensorboard/events.out.tfevents.1768387332.master-192-168-8-48.1680.0
+1768387968.507647,30,30,1.9196090698242188,Val/epoch_loss,outputs_dev/vitb16/T=vtab_Q=3bit_L=lora_2_qkv-fc1-proj-fc2/cifar/20260114184203_default_acc=53.50/tensorboard/events.out.tfevents.1768387332.master-192-168-8-48.1680.0
+1768388145.071276,40,40,1.9026446342468262,Val/epoch_loss,outputs_dev/vitb16/T=vtab_Q=3bit_L=lora_2_qkv-fc1-proj-fc2/cifar/20260114184203_default_acc=53.50/tensorboard/events.out.tfevents.1768387332.master-192-168-8-48.1680.0
+1768388321.530528,50,50,1.8765063285827637,Val/epoch_loss,outputs_dev/vitb16/T=vtab_Q=3bit_L=lora_2_qkv-fc1-proj-fc2/cifar/20260114184203_default_acc=53.50/tensorboard/events.out.tfevents.1768387332.master-192-168-8-48.1680.0
+1768388498.5150533,60,60,1.8444150686264038,Val/epoch_loss,outputs_dev/vitb16/T=vtab_Q=3bit_L=lora_2_qkv-fc1-proj-fc2/cifar/20260114184203_default_acc=53.50/tensorboard/events.out.tfevents.1768387332.master-192-168-8-48.1680.0
+1768388663.7155821,70,70,1.8443493843078613,Val/epoch_loss,outputs_dev/vitb16/T=vtab_Q=3bit_L=lora_2_qkv-fc1-proj-fc2/cifar/20260114184203_default_acc=53.50/tensorboard/events.out.tfevents.1768387332.master-192-168-8-48.1680.0
+1768388843.197147,80,80,1.8817163705825806,Val/epoch_loss,outputs_dev/vitb16/T=vtab_Q=3bit_L=lora_2_qkv-fc1-proj-fc2/cifar/20260114184203_default_acc=53.50/tensorboard/events.out.tfevents.1768387332.master-192-168-8-48.1680.0
+1768389009.7672246,90,90,1.8708683252334595,Val/epoch_loss,outputs_dev/vitb16/T=vtab_Q=3bit_L=lora_2_qkv-fc1-proj-fc2/cifar/20260114184203_default_acc=53.50/tensorboard/events.out.tfevents.1768387332.master-192-168-8-48.1680.0
+1768389160.2152932,99,99,1.8691412210464478,Val/epoch_loss,outputs_dev/vitb16/T=vtab_Q=3bit_L=lora_2_qkv-fc1-proj-fc2/cifar/20260114184203_default_acc=53.50/tensorboard/events.out.tfevents.1768387332.master-192-168-8-48.1680.0

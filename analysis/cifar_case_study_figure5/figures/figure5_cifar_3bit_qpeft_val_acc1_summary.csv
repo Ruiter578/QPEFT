@@ -1,0 +1,5 @@
+metric,epoch,value
+first_logged_acc1,10.0,1.8899999856948853
+warmup_boundary_acc1_interp,20.0,34.599998474121094
+best_acc1,99.0,53.5
+final_acc1,99.0,53.5

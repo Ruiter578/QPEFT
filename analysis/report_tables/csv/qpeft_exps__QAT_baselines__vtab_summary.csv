@@ -1,0 +1,3 @@
+Workbook,Sheet,Method,W/A,Params,Natural Avg,Specialized Avg,Structured Avg,Group Avg,Tot. Avg,Comments,Anomaly Notes
+qpeft_exps.xlsx,QAT_baselines,T=vtab_Q=3bit_L=None,,,48.3486,75.5925,45.2725,56.4045,52.7889,,
+qpeft_exps.xlsx,QAT_baselines,T=vtab_Q=4bit_L=None,,,60.5229,75.9125,46.4275,60.9543,57.8279,,

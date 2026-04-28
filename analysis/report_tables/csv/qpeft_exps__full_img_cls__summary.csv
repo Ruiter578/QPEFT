@@ -1,0 +1,6 @@
+Workbook,Sheet,Method,CIFAR,Food101,SVHN,Avg,Comments
+qpeft_exps.xlsx,full_img_cls,FP32_LoRA,91.2100,90.8400,96.3200,92.7900,"20epc, epc-based update"
+qpeft_exps.xlsx,full_img_cls,3bit_QAT,78.9800,82.0800,90.2600,83.7733,
+qpeft_exps.xlsx,full_img_cls,4bit_QAT,62.9300,59.7900,89.8800,70.8667,
+qpeft_exps.xlsx,full_img_cls,3bit_ours,89.0600,88.9000,97.2600,91.7400,
+qpeft_exps.xlsx,full_img_cls,4bit_ours,90.8000,90.3700,97.8400,93.0033,

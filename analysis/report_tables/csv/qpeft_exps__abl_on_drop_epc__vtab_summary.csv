@@ -1,0 +1,12 @@
+Workbook,Sheet,Method,W/A,Params,Natural Avg,Specialized Avg,Structured Avg,Group Avg,Tot. Avg,Comments,Anomaly Notes
+qpeft_exps.xlsx,abl_on_drop_epc,drop_epc=0,3/3,165888+83340,61.9929,82.4325,57.1163,67.1805,64.2426,,
+qpeft_exps.xlsx,abl_on_drop_epc,drop_epc=01,,,71.4700,83.7075,57.9013,71.0263,68.3332,,
+qpeft_exps.xlsx,abl_on_drop_epc,drop_epc=02,,,73.3214,84.1000,59.2687,72.2301,69.6737,,
+qpeft_exps.xlsx,abl_on_drop_epc,drop_epc=03,,,73.8957,84.3575,58.9038,72.3857,69.7858,,
+qpeft_exps.xlsx,abl_on_drop_epc,drop_epc=04,,,74.1100,84.3375,59.2825,72.5767,70.0200,,
+qpeft_exps.xlsx,abl_on_drop_epc,drop_epc=05,,,74.2800,84.1350,59.3750,72.5967,70.0789,,
+qpeft_exps.xlsx,abl_on_drop_epc,drop_epc=06,,,74.3014,84.3500,59.0862,72.5792,70.0105,,
+qpeft_exps.xlsx,abl_on_drop_epc,drop_epc=07,,,74.2714,84.8400,58.8775,72.6630,70.0147,,
+qpeft_exps.xlsx,abl_on_drop_epc,drop_epc=08,,,73.9429,84.2775,58.7850,72.3351,69.7363,,
+qpeft_exps.xlsx,abl_on_drop_epc,drop_epc=09,,,73.9100,84.1800,57.8500,71.9800,69.3100,,
+qpeft_exps.xlsx,abl_on_drop_epc,drop_epc=10,,,73.7014,84.1050,57.8638,71.8901,69.2232,,

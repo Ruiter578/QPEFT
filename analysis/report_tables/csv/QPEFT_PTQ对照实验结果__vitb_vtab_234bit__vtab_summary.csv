@@ -1,0 +1,12 @@
+Workbook,Sheet,Method,W/A,Params,Natural Avg,Specialized Avg,Structured Avg,Group Avg,Tot. Avg,Comments,Anomaly Notes
+QPEFT_PTQ对照实验结果.xlsx,vitb_vtab_234bit,FP32 fine-tuned ViT,32bit,,81.3414,86.1400,60.3025,75.9280,73.4932,,
+QPEFT_PTQ对照实验结果.xlsx,vitb_vtab_234bit,Adalog,3bit,,72.0329,78.9950,40.8062,63.9447,60.3505,,
+QPEFT_PTQ对照实验结果.xlsx,vitb_vtab_234bit,Adalog,4-bit,,79.6814,84.8475,54.4788,73.0026,70.1574,,
+QPEFT_PTQ对照实验结果.xlsx,vitb_vtab_234bit,Adalog,2bit,,8.1686,49.3325,14.2863,23.9291,19.4105,,
+QPEFT_PTQ对照实验结果.xlsx,vitb_vtab_234bit,Repq-vit,4 bit,,76.1829,82.9250,41.4050,66.8376,62.9589,,
+QPEFT_PTQ对照实验结果.xlsx,vitb_vtab_234bit,Repq-vit,3 bit,,16.9871,47.0925,16.6313,26.9036,23.1753,,
+QPEFT_PTQ对照实验结果.xlsx,vitb_vtab_234bit,PTQ4VIT,4 bit,,75.6343,80.9025,43.7050,66.7473,63.2995,,
+QPEFT_PTQ对照实验结果.xlsx,vitb_vtab_234bit,PTQ4VIT,3 bit,,60.5429,70.8650,32.5763,54.6614,50.9405,,
+QPEFT_PTQ对照实验结果.xlsx,vitb_vtab_234bit,PTQ4VIT,2 bit,,3.9671,30.5850,11.6925,15.4149,12.8237,,
+QPEFT_PTQ对照实验结果.xlsx,vitb_vtab_234bit,Qdrop,3bit,,66.3143,81.2275,47.9562,65.1660,61.7242,,
+QPEFT_PTQ对照实验结果.xlsx,vitb_vtab_234bit,Qdrop,4bit,,74.0714,83.4550,53.4637,70.3301,67.3700,,

@@ -1,0 +1,3 @@
+Workbook,Sheet,Method,W/A,Params,Natural Avg,Specialized Avg,Structured Avg,Group Avg,Tot. Avg,Comments,Anomaly Notes
+qpeft_exps.xlsx,abl_on_shift,no-shift,3/3,165888+83328,65.9243,81.7450,54.7725,67.4806,64.5595,没有任何shift,
+qpeft_exps.xlsx,abl_on_shift,shift as constant,3/3,165888+83328,73.9757,84.4925,58.9062,72.4582,69.8447,post-gelu-shift=0.17,
