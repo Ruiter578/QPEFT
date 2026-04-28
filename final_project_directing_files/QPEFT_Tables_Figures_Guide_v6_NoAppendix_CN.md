@@ -19,7 +19,7 @@ codex前置指令提示：针对我的毕业设计项目/TRS-SAS/linwei/QPEFT，
 3. Figure 1 是全文第一张方法总览图，应具有较高视觉吸引力，不能只是普通流程图。
 4. Figure 4 是方法章节核心图，应比 Figure 1 更技术化，展示 QPEFT 如何作用于 ViT block。
 5. Figure 5 和 Figure 6 必须来自真实 TensorBoard 日志或 CSV 导出，不允许用 AI 生成虚假曲线。
-6. Figure 2 和 Figure 3 只有在有真实 sensitivity 数据或 activation dump 时才保留，否则应从正文删除。
+6. Figure 2 和 Figure 3 可选。
 7. 所有图应先在正文引用，再插入图像；图题放在图下方，且应能脱离正文独立理解。
 
 ---
@@ -60,8 +60,8 @@ codex前置指令提示：针对我的毕业设计项目/TRS-SAS/linwei/QPEFT，
 | 图 | 位置 | 状态 | 推荐生成路线 |
 |---:|---|---|---|
 | Figure 1 | Section 1.1 | 必须生成。全文第一张图，决定第一视觉印象。 | GPT Image 2 生成高质量矢量风格草图，再用 PowerPoint、Figma 或 draw.io 微调文字与布局。 |
-| Figure 2 | Section 3.2 | 可选。只有真实 sensitivity 数据时保留。 | Codex + Python，从真实 layer/module sensitivity CSV 生成 heatmap。没有真实数据则删除。 |
-| Figure 3 | Section 3.2 | 可选。只有真实 activation dump 或 histogram 数据时保留。 | Codex + Python，从真实张量导出或 histogram CSV 生成分布图。没有真实数据则删除。 |
+| Figure 2 | Section 3.2 | 可选。| Codex + Python，尽量从真实 layer/module sensitivity CSV 生成 heatmap。没有真实数据尝试用代码或命令获取，或者联网搜索辅助生成 |
+| Figure 3 | Section 3.2 | 可选。 | Codex + Python，尽量从真实张量导出或 histogram CSV 生成分布图。没有真实数据尝试用代码或命令获取，或者联网搜索辅助生成 |
 | Figure 4 | Section 3.3 | 必须生成。方法章节核心图。 | 推荐先用 GPT Image 2 生成视觉草图，再用矢量工具或 Codex 生成可控版本。 |
 | Figure 5 | Section 4.6 | 若有 TensorBoard scalar 导出则必须生成。 | Codex + Python/matplotlib，从 TensorBoard event 或 CSV 生成训练曲线。 |
 | Figure 6 | Section 4.6 | 若有梯度日志则必须生成。 | Codex + Python/matplotlib，从 TensorBoard scalar 导出生成梯度诊断图。 |
@@ -209,7 +209,7 @@ Design style: polished CVPR/ICLR framework figure, precise layout, thin arrows, 
 
 ### 6.1 使用条件
 
-只有存在真实 sensitivity CSV 时才生成。可用指标包括 quantization error、gradient norm、validation drop 或其他明确定义的 sensitivity metric。没有真实数据时，不应在正文保留此图。
+可用指标包括 quantization error、gradient norm、validation drop 或其他明确定义的 sensitivity metric。缺乏证据和数据时，可以通过代码和命令来从QPEFT项目中获取数据，或者通过联网来辅助生成。
 
 ### 6.2 Codex 英文提示词
 
@@ -221,10 +221,10 @@ Write a Python script that reads a CSV file containing layer index, module name,
 
 ```text
 针对我的毕业设计项目/TRS-SAS/linwei/QPEFT，参考QPEFT/毕设项目指导文件中的几份指导文件，和项目主目录下的word文档以及结果表，tensorboard结果图片和一组实验结果输出QPEFT/outputs_dev。
-请编写一个 Python 脚本，读取一个 CSV 文件。该 CSV 文件包含 Vision Transformer 的 layer index、module name 和 sensitivity value 三类信息。module name 可以包括 qkv、proj、fc1、fc2、post-GELU 和 post-softmax。脚本需要生成一张适合AI顶级会议论文发表的 heatmap，其中 y 轴为 Transformer block index，x 轴为 module type，颜色表示 sensitivity value。只使用 matplotlib，不要使用 seaborn。配色应克制并具有学术风格，坐标轴刻度清晰，颜色条标注为 “Sensitivity”。导出 SVG、PDF 和 600 dpi PNG 三种格式。该图不能凭空生成任何数值。如果 CSV 缺少必要列，脚本必须给出清晰错误提示并停止运行。
+请编写一个 Python 脚本，读取一个 CSV 文件。该 CSV 文件包含 Vision Transformer 的 layer index、module name 和 sensitivity value 三类信息。module name 可以包括 qkv、proj、fc1、fc2、post-GELU 和 post-softmax。脚本需要生成一张适合AI顶级会议论文发表的 heatmap，其中 y 轴为 Transformer block index，x 轴为 module type，颜色表示 sensitivity value。只使用 matplotlib，不要使用 seaborn。配色应美观并具有学术风格，坐标轴刻度清晰，颜色条标注为 “Sensitivity”。导出 SVG、PDF 和 600 dpi PNG 三种格式。
 ```
 
-针对我的毕业设计项目/TRS-SAS/linwei/QPEFT，参考QPEFT/毕设项目指导文件中的几份指导文件，和项目主目录下的word文档以及结果表，tensorboard结果图片和一组实验结果输出QPEFT/outputs_dev，生成/TRS-SAS/linwei/QPEFT/毕设项目指导文件/QPEFT_Tables_Figures_Guide_v6_NoAppendix_CN.md要求的Figure 2，如
+
 
 ---
 

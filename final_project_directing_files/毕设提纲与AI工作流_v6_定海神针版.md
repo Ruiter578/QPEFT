@@ -230,8 +230,8 @@
 | 图 | 当前策略 |
 |---:|---|
 | Figure 1 | 必须生成并插入。Introduction 的第一视觉锚点，应高质量、类似 CVPR/ICLR overview figure。 |
-| Figure 2 | 可选。只有真实 layerwise sensitivity 数据时保留，否则删除引用和图题。 |
-| Figure 3 | 可选。只有真实 activation dump 或 histogram 数据时保留，否则删除引用和图题。 |
+| Figure 2 | 可选。 |
+| Figure 3 | 可选。 |
 | Figure 4 | 必须生成并插入。Methods 核心图，应展示 ViT block 内部 QPEFT/LoRA/quantizer/SEEQ 作用路径。 |
 | Figure 5 | 建议生成。必须来自 TensorBoard scalar 或 CSV，不允许 AI 伪造曲线。 |
 | Figure 6 | 建议生成。必须来自 TensorBoard gradient logs 或 CSV，不允许 AI 伪造曲线。 |
@@ -380,7 +380,7 @@
 - [ ] Figure 1 已插入并首次引用。
 - [ ] Figure 4 已插入并首次引用。
 - [ ] Figure 5/6 若保留，必须来自真实 TensorBoard 数据。
-- [ ] Figure 2/3 若无真实数据，删除。
+- [ ] Figure 2/3 尽量使用真实数据或者代码、命令得到的结果。
 - [ ] 所有图题在图下。
 - [ ] 所有表题在表上。
 - [ ] 表格三线表风格统一。
