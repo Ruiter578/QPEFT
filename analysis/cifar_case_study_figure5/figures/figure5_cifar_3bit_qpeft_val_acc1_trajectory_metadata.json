@@ -1,0 +1,17 @@
+{
+  "figure": "Figure 5",
+  "caption": "CIFAR case-study training trajectory for 3-bit QPEFT.",
+  "source_type": "tensorboard_event",
+  "source_path": "/TRS-SAS/linwei/QPEFT/outputs_dev/vitb16/T=vtab_Q=3bit_L=lora_2_qkv-fc1-proj-fc2/cifar/20260114184203_default_acc=53.50/tensorboard/events.out.tfevents.1768387332.master-192-168-8-48.1680.0",
+  "tensorboard_screenshot_reference": "/TRS-SAS/linwei/QPEFT/tensorboard.png",
+  "tensorboard_tag": "Val/epoch_acc1",
+  "note": "This figure is a CIFAR case-study trajectory and does not claim multi-task convergence.",
+  "stats": {
+    "first_epoch": 10.0,
+    "first_acc1": 1.8899999856948853,
+    "best_epoch": 99.0,
+    "best_acc1": 53.5,
+    "final_epoch": 99.0,
+    "final_acc1": 53.5
+  }
+}

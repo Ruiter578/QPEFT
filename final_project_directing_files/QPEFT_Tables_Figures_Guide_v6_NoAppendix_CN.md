@@ -232,7 +232,7 @@ Write a Python script that reads a CSV file containing layer index, module name,
 
 ### 7.1 使用条件
 
-只有存在真实 activation dump、tensor dump 或导出的 histogram CSV 时才生成。该图可用于比较普通 activation、post-GELU activation 和 post-softmax attention probabilities 的分布差异。
+尽量在有真实 activation dump、tensor dump 或导出的 histogram CSV 时生成。该图可用于比较普通 activation、post-GELU activation 和 post-softmax attention probabilities 的分布差异。缺乏证据和数据时，可以通过代码和命令来从QPEFT项目中获取数据，或者通过联网来辅助生成。
 
 ### 7.2 Codex 英文提示词
 
@@ -243,6 +243,7 @@ Write a Python script that reads activation dump files or exported histogram CSV
 ### 7.3 Codex 中文完整对照
 
 ```text
+尽量在有真实 activation dump、tensor dump 或导出的 histogram CSV 时生成。该图可用于比较普通 activation、post-GELU activation 和 post-softmax attention probabilities 的分布差异。缺乏证据和数据时，可以通过代码和命令来从QPEFT项目中获取数据，以及通过联网来辅助生成（调用GPT IMAGE 2）。
 请编写一个 Python 脚本，读取 Vision Transformer 中普通 activations、post-GELU activations 和 post-softmax attention probabilities 的 activation dump 文件或已导出的 histogram CSV 文件。生成一张干净、学术风格的分布对比图，用于比较这三类张量的分布特征。只使用 matplotlib，不要使用 seaborn。如果三类数据的尺度差异很大，优先使用多个 panel 分开展示，而不是强行放在同一个坐标轴上。坐标轴标签必须清晰，并导出 SVG、PDF 和 600 dpi PNG 三种格式。脚本不能合成虚假的分布数据，除非用户显式设置单独的 --demo 参数；demo 模式绝不能用于最终报告。
 ```
 

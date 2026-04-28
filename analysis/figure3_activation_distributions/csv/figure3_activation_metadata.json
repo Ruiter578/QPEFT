@@ -1,0 +1,13 @@
+{
+  "checkpoint": "outputs_dev/vitb16/T=vtab_Q=3bit_L=lora_2_qkv-fc1-proj-fc2/cifar/20260114184203_default_acc=53.50/best_checkpoint.pth",
+  "dataset": "cifar",
+  "split": "test",
+  "max_images": 32,
+  "batch_size": 4,
+  "block_index": 5,
+  "hook_modules": {
+    "ordinary": "blocks.5.attn.qkv.act_quantizer",
+    "post-GELU": "blocks.5.mlp.fc2.act_quantizer",
+    "post-softmax": "blocks.5.attn.attn_quantizer"
+  }
+}
