@@ -7,13 +7,13 @@ conda activate PEFT
 
 conda info -e
 
-PROJECT_ROOT=/TRS-SAS/linwei/direct_quant_dev_clean
+PROJECT_ROOT=/TRS-SAS/linwei/QPEFT
 GPU_ID=2
 
 EXEC_SCRIPT=main_vtab.py
 USE_CORES=10
 
-DATASET=cifar
+DATASET=caltech101
 MODEL=vitb16
 TRAIN_CFGS="vtab"
 QUANT_CFGS="3bit"
