@@ -1,4 +1,6 @@
-# Byte-compiled / optimized / DLL files
+# ============================================================
+# Python cache / bytecode
+# ============================================================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -6,10 +8,9 @@ __pycache__/
 # C extensions
 *.so
 
-# logs
-experiments/
-
+# ============================================================
 # Distribution / packaging
+# ============================================================
 .Python
 build/
 develop-eggs/
@@ -31,8 +32,8 @@ share/python-wheels/
 MANIFEST
 
 # PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+# Usually these files are written by a Python script from a template
+# before PyInstaller builds the executable.
 *.manifest
 *.spec
 
@@ -40,7 +41,9 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
+# ============================================================
 # Unit test / coverage reports
+# ============================================================
 htmlcov/
 .tox/
 .nox/
@@ -50,107 +53,264 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-*.py,cover
+*.py.cover
 .hypothesis/
 .pytest_cache/
+cover/
 
-# Translations
-*.mo
-*.pot
+# ============================================================
+# Type checkers / linters / static analysis
+# ============================================================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
 
-# Django stuff:
+# ============================================================
+# Jupyter / IPython
+# ============================================================
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# ============================================================
+# Virtual environments / local env files
+# ============================================================
+.env
+.env.*
+.envrc
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+conda-env/
+
+# If using pyenv and you want project-level reproducibility,
+# consider committing .python-version instead of ignoring it.
+# .python-version
+
+# PEP 582; used by tools such as pyflow / pdm
+__pypackages__/
+
+# ============================================================
+# Python package managers / build tools
+# ============================================================
+
+# pipenv:
+# Usually applications may commit Pipfile.lock for reproducibility.
+# Uncomment only if you intentionally do not want to track it.
+# Pipfile.lock
+
+# uv:
+# Usually applications may commit uv.lock for reproducibility.
+# Uncomment only if you intentionally do not want to track it.
+# uv.lock
+
+# poetry:
+# Usually applications may commit poetry.lock for reproducibility.
+# Uncomment only if you intentionally do not want to track it.
+# poetry.lock
+# poetry.toml
+
+# pdm:
+# Usually applications may commit pdm.lock / pdm.toml for reproducibility.
+# Uncomment only if you intentionally do not want to track them.
+# pdm.lock
+# pdm.toml
+.pdm-python
+.pdm-build/
+
+# pixi:
+# Usually applications may commit pixi.lock for reproducibility.
+# Uncomment only if you intentionally do not want to track it.
+# pixi.lock
+.pixi/
+
+# ============================================================
+# Logs
+# ============================================================
 *.log
+logs/
+log/
+
+# ============================================================
+# TensorBoard / experiment trackers
+# ============================================================
+runs/
+tensorboard/
+tb_logs/
+lightning_logs/
+wandb/
+mlruns/
+
+# ============================================================
+# Research experiment outputs
+# ============================================================
+
+# Generated experiment outputs
+outputs/
+output/
+results/
+result/
+tmp/
+temp/
+
+# Project-specific experiment output folders
+debug_exps*/
+*exps/
+experiments_dev_push/
+QPEFT_final_exps/
+
+# Important note:
+# Do NOT ignore the whole experiments/ directory by default.
+# Keep experiment notes/config summaries under experiments/ if useful.
+# Ignore generated subfolders inside experiments instead:
+experiments/**/outputs/
+experiments/**/runs/
+experiments/**/checkpoints/
+experiments/**/logs/
+
+# ============================================================
+# Model checkpoints / pretrained weights
+# ============================================================
+checkpoints/
+checkpoint/
+weights/
+pretrained/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Archives that are usually generated experiment packages
+*.tar
+*.tar.gz
+*.zip
+
+# ============================================================
+# Datasets
+# ============================================================
+data/
+dataset/
+datasets/
+raw_data/
+processed_data/
+
+# ============================================================
+# Temporary files
+# ============================================================
+*.tmp
+*.bak
+*.swp
+tmp.py
+tempCodeRunnerFile.py
+
+# ============================================================
+# OS / editor / IDE files
+# ============================================================
+.DS_Store
+Thumbs.db
+
+# VS Code:
+# If you want to share recommended extensions/settings, do not ignore all .vscode/.
+# Instead, ignore machine-specific files and selectively commit useful settings.
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# JetBrains:
+# Prefer putting .idea/ in your global gitignore unless your team wants to share it.
+.idea/
+
+# Spyder / Rope
+.spyderproject
+.spyproject
+.ropeproject
+
+# ============================================================
+# Documentation build outputs
+# ============================================================
+docs/_build/
+/site
+
+# ============================================================
+# Framework-specific local files
+# ============================================================
+
+# Django
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
-# Flask stuff:
+# Flask
 instance/
 .webassets-cache
 
-# Scrapy stuff:
-.scrapy
+# Scrapy
+.scrapy/
 
-# Sphinx documentation
-docs/_build/
+# MkDocs / Sphinx covered above
 
-# PyBuilder
-target/
+# Streamlit secrets
+.streamlit/secrets.toml
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Marimo
+marimo/_static/
+marimo/_lsp/
+__marimo__/
 
-# IPython
-profile_default/
-ipython_config.py
+# Abstra local state
+.abstra/
 
-# pyenv
-.python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
-
-# Celery stuff
+# ============================================================
+# Services / queues / databases
+# ============================================================
 celerybeat-schedule
 celerybeat.pid
 
-# SageMath parsed files
-*.sage.py
+# Redis
+*.rdb
+*.aof
+*.pid
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+# RabbitMQ
+mnesia/
+rabbitmq/
+rabbitmq-data/
 
-# Spyder project settings
-.spyderproject
-.spyproject
+# ActiveMQ
+activemq-data/
 
-# Rope project settings
-.ropeproject
+# ============================================================
+# Security / secrets
+# ============================================================
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
 
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-experiments*
-debug_exps*
-experiments_dev_push
-# exp_shells/*
-# ensemb_exps/*
-# recu_exps
-*exps/
-*.tar
-# fp_ckpts/
-# datasets
-data/
-*.pdf
-
-# vscode
-.vscode/
-checkpoints
-*output*
-*.pdf
-*.pt
-assets/
-
-tmp.py
-QPEFT_final_exps
+# ============================================================
+# Figures / assets policy
+# ============================================================
+# Do not globally ignore:
+#   assets/
+#   figures/
+#   docs/assets/
+#   paper_figures/
+# because README images, architecture diagrams, and selected paper figures
+# are often useful to track.
+#
+# Put generated bulk visualizations under outputs/ or results/ so they are ignored.
+#
+# Do not globally ignore *.pdf by default.
+# If needed, ignore only generated reports in a specific output directory, e.g.:
+# outputs/**/*.pdf
+# results/**/*.pdf
