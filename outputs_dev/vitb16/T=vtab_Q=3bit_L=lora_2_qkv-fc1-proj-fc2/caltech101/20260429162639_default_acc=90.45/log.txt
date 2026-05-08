@@ -1,0 +1,11 @@
+{"eval_approx_rounding": false, "train_lr": 0.0005242187499999998, "train_loss": 1.9097240343689919, "test_loss": 4.487466226021449, "test_acc1": 3.566732412886259, "test_acc5": 17.685733070348455, "epoch": 10}
+{"eval_approx_rounding": false, "train_lr": 0.0009998774721098828, "train_loss": 0.20844140322878957, "test_loss": 1.2412861765672762, "test_acc1": 76.16699539776462, "test_acc5": 93.22813938198554, "epoch": 20}
+{"eval_approx_rounding": false, "train_lr": 0.0009581916082619293, "train_loss": 0.102256003418006, "test_loss": 0.5867573699603478, "test_acc1": 87.68902038132808, "test_acc5": 96.0223537146614, "epoch": 30}
+{"eval_approx_rounding": false, "train_lr": 0.0008467578376201182, "train_loss": 0.08911416295450181, "test_loss": 0.5792390356461207, "test_acc1": 86.50558842866535, "test_acc5": 95.77580539119, "epoch": 40}
+{"eval_approx_rounding": false, "train_lr": 0.0006825409416150184, "train_loss": 0.030136517714709044, "test_loss": 0.44927531216914457, "test_acc1": 89.26692965154504, "test_acc5": 96.5483234714004, "epoch": 50}
+{"eval_approx_rounding": false, "train_lr": 0.0004905414540335375, "train_loss": 0.020987371128285304, "test_loss": 0.4325229513148467, "test_acc1": 89.8422090729783, "test_acc5": 96.31821170282709, "epoch": 60}
+{"eval_approx_rounding": false, "train_lr": 0.00029998955638026637, "train_loss": 0.010833791908225976, "test_loss": 0.41849965291718644, "test_acc1": 90.00657462195923, "test_acc5": 96.56476002629849, "epoch": 70}
+{"eval_approx_rounding": false, "train_lr": 0.00013989504771566225, "train_loss": 0.011142975592520088, "test_loss": 0.4107729584599535, "test_acc1": 90.45036160420776, "test_acc5": 96.63050624589086, "epoch": 80}
+{"eval_approx_rounding": false, "train_lr": 3.463086572357618e-05, "train_loss": 0.010400175422546454, "test_loss": 0.408263136089469, "test_acc1": 90.22024983563445, "test_acc5": 96.76199868507561, "epoch": 90}
+{"eval_approx_rounding": false, "train_lr": 2.3457299422507484e-07, "train_loss": 0.009221297295880504, "test_loss": 0.41093627728211385, "test_acc1": 90.3681788297173, "test_acc5": 96.71268902038133, "epoch": 99}
+max acc = 90.45%
